@@ -22,6 +22,7 @@
     "typescript": "^2.7.2"
   },
   "scripts": {
+    "build": "tsc",
     "dev": "nodemon -w src -e ts --exec \"node --no-lazy -r ts-node/register --inspect=9229 src/index.ts\""
   },
   "author": "Adam Stankiewicz <sheerun@sher.pl>",
