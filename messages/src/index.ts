@@ -47,7 +47,7 @@ bot.dialog('/', [
       }
 
       if (session.userData.message) {
-        session.send('Hello! Your previous message was: ' + session.userData.message)
+        session.send('Howdy! Your previous message was: ' + session.userData.message)
       } else {
         session.send('Hello, firstcomer!')
       }
