@@ -1,18 +1,14 @@
 
 {
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Launch",
-            "type": "node",
-            "request": "launch",
-            "program": "${workspaceRoot}/index.js",
-            "cwd": "${workspaceRoot}",
-            "env": {
-                "NODE_ENV": "development",
-                "QnAKnowledgebaseId": "",
-                "QnASubscriptionKey": ""
-            }
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Attach to debug server",
+      "protocol": "inspector",
+      "address": "127.0.0.1",
+      "port": 9229
+    }
+  ]
 }

@@ -1,20 +1,29 @@
 {
-  "name": "qnamakerbot",
+  "name": "elections-bot",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Bot for reminding about elections",
+  "main": "./built/index",
+  "typings": "./built/index",
   "dependencies": {
+    "@sheerun/botbuilder-azure": "^3.0.5",
+    "@types/restify": "^5.0.7",
     "botbuilder": "^3.13.1",
-    "botbuilder-azure": "^3.0.4",
-    "request": "^2.79.0",
-    "botbuilder-cognitiveservices": "^1.1.0"
+    "botbuilder-azure": "latest",
+    "dotenv-extended": "^2.0.1",
+    "request": "^2.79.0"
   },
   "devDependencies": {
-      "restify": "^5.0.0"
-  },    
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "@types/node": "^9.4.7",
+    "concurrently": "^3.5.1",
+    "forever": "^0.15.3",
+    "nodemon": "^1.17.1",
+    "restify": "^5.0.0",
+    "ts-node": "^5.0.1",
+    "typescript": "^2.7.2"
   },
-  "author": "",
-  "license": "ISC"
+  "scripts": {
+    "dev": "nodemon -w src -e ts --exec \"node --no-lazy -r ts-node/register --inspect=9229 src/index.ts\""
+  },
+  "author": "Adam Stankiewicz <sheerun@sher.pl>",
+  "license": "MIT"
 }
