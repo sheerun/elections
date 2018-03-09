@@ -17,7 +17,7 @@
   }
  ],
  "_originalEntryPoint": true,
- "_originalScriptFile": "index.js",
+ "_originalScriptFile": "built/index.js",
  "scriptFile": "../index.js",
  "entryPoint": "messages"
 }
