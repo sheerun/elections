@@ -17,7 +17,7 @@
   }
  ],
  "_originalEntryPoint": false,
- "_originalScriptFile": "index.js",
+ "_originalScriptFile": "built/index.js",
  "scriptFile": "../.funcpack/index.js",
  "entryPoint": "messages"
 }
