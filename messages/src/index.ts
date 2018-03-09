@@ -47,7 +47,7 @@ bot.dialog('/', [
       }
 
       if (session.userData.message) {
-        session.send('Howdy! Your previous message was: ' + session.userData.message)
+        session.send('Yolo! Your previous message was: ' + session.userData.message)
       } else {
         session.send('Hello, firstcomer!')
       }
@@ -61,7 +61,7 @@ if (isDevelopment) {
   const restify = require('restify')
   const server = restify.createServer()
   server.listen(3978, function () {
-    console.log('test bot endpont at http://localhost:3978/api/messages')
+    console.log('test bot endpoint at http://localhost:3978/api/messages')
   })
   server.post('/api/messages', connector.listen())
 } else {
