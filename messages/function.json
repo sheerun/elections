@@ -16,7 +16,7 @@
    "name": "res"
   }
  ],
- "_originalEntryPoint": true,
+ "_originalEntryPoint": false,
  "_originalScriptFile": "built/index.js",
  "scriptFile": "../index.js",
  "entryPoint": "messages"
