@@ -127,7 +127,8 @@ IF EXIST "%1\package.json" (
 FOR /F "tokens=*" %%i IN ('DIR /B %1 /A:D') DO (
   IF EXIST "%1\%%i\package.json" (
     pushd "%1\%%i"
-    call npm install --production
+  call npm install
+  call npm run build
     IF !ERRORLEVEL! NEQ 0 goto error
     popd
   )
